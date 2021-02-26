@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+    text-align: center;
+}
+
+.f-left {
+    float: left;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 80vw;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(236, 147, 181);
+    height: 100px;
+}
+
+main .sezione-uno {
+    height: 500px;
+    width: 100%;
+}
+
+section.sezione-uno {
+    background-color: rgb(245, 207, 225);
+}
+
+section.sezione-due {
+    background-color: rgb(145, 109, 167);
+}
+
+.tit-sezione {
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: rgb(187, 199, 214);
+}
+
+/* altezza elementi sezione float */
+.sezione-due aside, .sezione-due .central {
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.sezione-due aside {
+    width: 20%;
+    background-color: rgb(177, 168, 196);
+}
+
+.sezione-due .central {
+    width: 56%;
+    background-color: rgb(247, 202, 224);
+}
+
+.left-side, .central {
+    margin-right: 2%
+}
+
+footer {
+    background-color: rgb(89, 98, 138);
+    height: 100px;
+}
+
+header, section {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 5px;
+}
