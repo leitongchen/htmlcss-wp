@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 
-    color: white;
-    text-align: center;
+    
 }
 
+body {
+    font-family: 'Nunito', sans-serif;
+ 
+}
+.wrapper {
+    width: 80vw;
+    margin: auto;
+}
 .f-left {
     float: left;
 }
@@ -16,64 +23,117 @@
     clear: both;
 }
 
-.wrapper {
-    width: 80vw;
-    margin: auto;
+.t-white {
+    color: white;
+}
+
+.t-gray {
+    color: darkgray;
+}
+
+.t-dark {
+    color: rgb(62, 65, 62);
+}
+
+/* overlay hero */
+.overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    padding: 300px 50% 30px 40px;
+
+    border-radius: 20px;
+    overflow:scroll;
 }
 
 header {
-    background-color: rgb(236, 147, 181);
-    height: 100px;
+    height: 50px;
 }
 
-main .sezione-uno {
+header #logo {
+    height: 100%;
+
+    border-right: 1px solid darkgray; 
+    padding-right: 20px;
+}
+
+#navbar {
+    margin-top: 20px;
+}
+
+#navbar ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    
+    font-size: 13px;
+
+    margin-right: 10px; 
+}
+
+#navbar ul li a {
+    text-decoration: none;
+
+    color: darkgray;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+section#hero {
     height: 500px;
     width: 100%;
+
+    background-image: url(img/banner.jpg);
+    background-position: center;
+
+    border-radius: 20px;
 }
 
-section.sezione-uno {
-    background-color: rgb(245, 207, 225);
-}
-
-section.sezione-due {
-    background-color: rgb(145, 109, 167);
+#hero h2 {
+    font-weight: 300;
+    font-size: 2rem;
 }
 
 .tit-sezione {
     height: 100px;
     margin-bottom: 20px;
-    background-color: rgb(187, 199, 214);
+}
+
+.tit-sezione h1 {
+    font-family: 'Open Sans';
+    font-size: 2rem;
 }
 
 /* altezza elementi sezione float */
-.sezione-due aside, .sezione-due .central {
+section aside, section .col-central {
     height: 400px;
     margin-bottom: 20px;
 }
 
-.sezione-due aside {
+section aside {
     width: 20%;
     background-color: rgb(177, 168, 196);
 }
 
-.sezione-due .central {
+section .col-central {
     width: 56%;
     background-color: rgb(247, 202, 224);
-}
-
-.left-side, .central {
-    margin-right: 2%
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 footer {
     background-color: rgb(89, 98, 138);
     height: 100px;
+
+    margin-top: 5px;
+
 }
 
 header, section {
     margin-top: 20px;
 }
 
-footer {
-    margin-top: 5px;
-}
+/* utility classes */
+
