@@ -44,8 +44,8 @@ body {
     line-height: 100px;
 }
 
-/* overlay hero */
-.overlay {
+/* overlay */
+.overlay-hero {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 
@@ -53,6 +53,12 @@ body {
 
     border-radius: 20px;
     overflow:scroll;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
 header {
@@ -74,7 +80,7 @@ header #logo {
     display: inline-block;
     text-transform: uppercase;
     
-    font-size: 13px;
+    font-size: 15px;
 
     margin-right: 10px; 
 }
@@ -90,11 +96,13 @@ header #logo {
 }
 
 section#hero {
-    height: 500px;
+    height: 600px;
     width: 100%;
 
     background-image: url(img/banner.jpg);
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     border-radius: 20px;
 }
@@ -132,14 +140,32 @@ section p {
     margin-bottom: 20px;
 }
 
-.section-img img {
+/* immagini nelle tre colonne */
+section .section-img:first-of-type {
+    background-size: cover;
+    background-position: center;
+}
+
+/* prima colonna */
+section aside:nth-child(2) > .section-img {
+    background-image: url(img/img-1.jpg);
+}
+/* colonna centrale */
+section article > .section-img {
+    background-image: url(img/banner-2.jpg);
+}
+/* terza colonna */
+section aside:nth-child(4) > .section-img {
+    background-image: url(img/img-3.jpg);
+}
+
+/* .section-img img {
     height: 100%;
     width: 100%;
 
     object-fit: cover;
     object-position: center;
-
-}
+} */
 
 /* altezza elementi sezione float */
 section aside, section .col-central {
