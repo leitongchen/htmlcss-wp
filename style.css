@@ -1,9 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
-    
+    box-sizing: border-box;    
 }
 
 body {
@@ -52,7 +50,6 @@ body {
     padding: 300px 50% 30px 40px;
 
     border-radius: 20px;
-    overflow:scroll;
 }
 .overlay {
     height: 100%;
@@ -192,6 +189,3 @@ footer {
 header, section {
     margin-top: 20px;
 }
-
-/* utility classes */
-
